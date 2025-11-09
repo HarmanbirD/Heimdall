@@ -1,0 +1,15 @@
+[Unit]
+Description=Heimdall File Integrity Monitoring Daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/Heimdall
+Restart=always
+User=root
+Group=root
+RestartSec=10
+SyslogIdentifier=Heimdall
+WorkingDirectory=/
+
+[Install]
+WantedBy=multi-user.target

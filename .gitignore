@@ -53,3 +53,106 @@ dkms.conf
 
 # debug information files
 *.dwo
+# ----------------------------
+# 🧱 Build artifacts
+# ----------------------------
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+
+# ----------------------------
+# 🧩 Binaries
+# ----------------------------
+Heimdall
+Heimdall.exe
+*.out
+
+# ----------------------------
+# 🧾 Logs and runtime data
+# ----------------------------
+*.log
+/var/log/heimdall.log
+*.pid
+*.tmp
+*.swp
+*.lock
+
+# ----------------------------
+# 🧰 System and editor files
+# ----------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.sublime-workspace
+*.sublime-project
+.vscode/
+.idea/
+*.code-workspace
+*~
+
+# ----------------------------
+# 🧩 Test and debug artifacts
+# ----------------------------
+asan*
+*.stackdump
+*.core
+core.*
+*.gcda
+*.gcno
+*.gcov
+
+# ----------------------------
+# ⚙️ CMake user presets (optional)
+# ----------------------------
+CMakeUserPresets.json
+
+# ----------------------------
+# 🧩 Packaging or compressed files
+# ----------------------------
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.pax
+*.pax.Z
+
+# ----------------------------
+# 🧩 OS/temporary cache directories
+# ----------------------------
+.cache/
+.tmp/
+.logs/
+
+# ----------------------------
+# 🧠 CLion / JetBrains specific
+# ----------------------------
+cmake-build-*/
+.idea/
+
+# ----------------------------
+# 🔒 Sensitive files (config or keys)
+# ----------------------------
+/etc/heimdall.conf
+*.pem
+*.crt
+*.key
+*.der
+
+# Clangd index cache
+.cache/
+.vscode/
+.idea/
+
